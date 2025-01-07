@@ -60,7 +60,7 @@ def main():
             for shot in shots:
                 if shot.collides_with(asteroid):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
         # draw sprites
         for sprite in drawable:
@@ -73,6 +73,6 @@ def main():
         dt = clock.tick(60) / 1000
 
 
-# ensures main() function is only called main.py is run directly
+# ensures main() function is only called when main.py is run directly
 if __name__ =="__main__":
     main()
