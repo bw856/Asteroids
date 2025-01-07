@@ -30,6 +30,9 @@ def main():
         # draw player
         player.draw(screen)
 
+        # update player
+        player.update(dt)
+
         # refresh display
         pygame.display.flip()
 
